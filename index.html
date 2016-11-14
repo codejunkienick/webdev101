@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Course: WebDev 101</title>
+
+		<link rel="stylesheet" href="./lib/foundation/css/foundation.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="./lib/css/app.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>WebDev 101</h1>
+          <h2>Welcome!</h2>
+        </section>
+        <section>
+          <section>
+            <h1>Давайте познакомимся</h1>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Потеряев Никита
+              ![Poteryaev Photo]()
+              * Lorem ipsum
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Тарасов Гоша
+              ![Tarasov Photo]()
+              * Lorem ipsum
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Ваша Очередь
+            </script>
+          </section>
+        </section>
+        <section>
+          <h2>Netstat</h2>
+          <p>
+          <b>netstat</b> (network statistics) — утилита командной строки выводящая на дисплей состояние TCP-соединений (как входящих, так и исходящих), таблицы маршрутизации, число сетевых интерфейсов и сетевую статистику по протоколам. 
+          </p>
+          <pre class="fragment fade-in"><code data-trim >
+$ netstat -tulpn
+$ Active Internet connections (only servers)
+$ Proto  Local Address      Foreign Address  State   PID/Program name
+...
+$ tcp    127.0.0.1:631      0.0.0.0:*        LISTEN  4355/cupsd      
+$ tcp    127.0.0.1:5432     0.0.0.0:*        LISTEN  1796/postgres   
+$ tcp    127.0.0.1:9050     0.0.0.0:*        LISTEN  2716/tor        
+$ tcp    0.0.0.0:445        0.0.0.0:*        LISTEN  1083/smbd       
+$ tcp    0.0.0.0:8000       0.0.0.0:*        LISTEN  480/grunt       
+...
+          </code></pre>
+        </section>
+        <!-- END -->
+				<section>
+          <h3>Спасибо за внимание</h3>
+          <h1>Q/A</h1>
+          <p style="padding-top:25px;">Онлайн: <a href="https://codejunkienick.github.io/slides/webdev101">codejunkienick.github.io/slides/webdev101</a></p>
+          <p style="padding-top:25px;">Source: <a href="https://codejunkienick.github.io/slides/webdev101">github.com/codejunkienick/webdev101</a></p>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+        slideNumber: 'c/t',
+        controls: false,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

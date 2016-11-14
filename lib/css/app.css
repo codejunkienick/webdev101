@@ -1,0 +1,13 @@
+section .mytable td {
+  font-size: 20px;
+  padding: 8px !important;
+}
+section .mytable p {
+  margin: 8px 0;
+}
+.mytable .others {
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
