@@ -6,10 +6,10 @@
 
 		<title>Course: WebDev 101</title>
 
-		<link rel="stylesheet" href="./lib/foundation/css/foundation.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 		<link rel="stylesheet" href="./lib/css/app.css">
+		<link rel="stylesheet" href="./lib/css/flexboxgrid.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -49,10 +49,112 @@
               * Lorem ipsum
             </script>
           </section>
+        </section>
+        <section data-markdown style="font-size: 50px">
+          <script type="text/template">
+            1. Зачем вы сюда пришли?
+            2. Что вы здесь получите?
+            3. Как и чем вы будете это получать?
+          </script>
+        </section>
+        <section>
+          <section data-markdown style="font-size: 50px">
+            <script type="text/template">
+              ## Зачем вы сюда пришли?
+            </script>
+          </section>
+          <section>
+            <h3>Делать сайты</h3>
+            <div style="background: #fff; display: inline-block;" >
+              <img src="lecture1/just-build-websites.png" alt="">
+            </div>
+          </section>
+          <section>
+            <h3>Делать значимые проекты</h3>
+            <div class="row center-md" >
+              <div class="col-md-6 col-xs-12"><img src="./lecture1/kiva.png" alt=""></div>
+              <div class="col-md-6 col-xs-12"><img src="lecture1/remember.png" alt=""></div>
+            </div>
+          </section>
           <section data-markdown>
             <script type="text/template">
-              ## Ваша Очередь
+              ### Делать классные презентации
+              [codejunkienick.github.io/webdev101/](https://codejunkienick.github.io/webdev101/#/)
             </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Узнать, что тут студенты затевают
+            </script>
+          </section>
+        </section>
+        <section>
+        <section data-markdown style="font-size: 50px">
+          <script type="text/template">
+            ## Что вы здесь получите?
+          </script>
+        </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Основу для работы с веб технологиями
+              * HTML
+              * CSS
+              * JavaScript
+            </script>
+          </section>
+          <section>
+            <h3>Возможность создать свой небольшой онлайн сервис</h3>
+              <ul>
+                <li>NodeJS</li>
+                <li>ReactJS</li>
+                <li>MongoDB</li>
+              </ul>
+              <img src="lecture1/pokemap.png" alt="">
+            </script>
+          </section>
+          <section>
+            <h3>Возможность создать свое мобильное приложение</h3>
+              <ul class="inline-list">
+                <li>ReactNative</li>
+              </ul>
+              <img src="lecture1/pokemap.png" alt="">
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### А также
+              * git
+              * Web Design
+              * 
+            </script>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Как и чем вы будете это получать</h2>
+          </section>
+          <section>
+            <h3>Учебные группы</h3>
+            <ul>
+              <li>Не так страшно пропустить занятие</li>
+              <li>Время ответа в группе 6 человек &lt; в группе 40</li>
+              <li>Практика организации работы команды</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Из чего будет состоять</h3>
+            <ul>
+              <li>Менеджер группы</li> 
+              <li>Члены команды</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Чем можно себя организовать</h3>
+            <ul>
+              <li>KanBan доска в Trello</li> 
+              <li>Свой групповой чат в Discord / Slack</li>
+              <li>github / gitlab</li>
+            </ul>
           </section>
         </section>
 
@@ -60,7 +162,6 @@
           <h3>Спасибо за внимание</h3>
           <h1>Q/A</h1>
           <p style="padding-top:25px;">Онлайн: <a href="https://codejunkienick.github.io/slides/webdev101">codejunkienick.github.io/slides/webdev101</a></p>
-          <p style="padding-top:25px;">Source: <a href="https://codejunkienick.github.io/slides/webdev101">github.com/codejunkienick/webdev101</a></p>
         </section>
 			</div>
 		</div>
@@ -71,6 +172,7 @@
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+        width: 1100,
 				history: true,
         slideNumber: 'c/t',
         controls: false,

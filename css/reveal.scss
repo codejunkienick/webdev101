@@ -37,6 +37,15 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 	display: block;
 }
 
+.inline-list {
+  display: inline-block;
+  list-style-type: disc;
+  li {
+  list-style-type: disc;
+    display: inline-block;
+  }
+}
+
 
 /*********************************************
  * GLOBAL STYLES

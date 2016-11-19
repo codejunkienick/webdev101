@@ -32,6 +32,13 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 .reveal footer, .reveal header, .reveal hgroup, .reveal menu, .reveal nav, .reveal section {
   display: block; }
 
+.inline-list {
+  display: inline-block;
+  list-style-type: disc; }
+  .inline-list li {
+    list-style-type: disc;
+    display: inline-block; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
