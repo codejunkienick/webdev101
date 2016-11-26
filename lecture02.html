@@ -171,6 +171,48 @@
             </script>
           </section>
         </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Безумие №1
+              #### Box Model aka Margin vs Padding
+            </script>
+          </section>
+          <section>
+            <img src="./imgs/lect2/box-model.jpg">
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              Поля элемента (__padding area__) — это пустая область, окружающая контент. Она может быть залита каким-то цветом, покрыта фоновый картинкой, а её границы называются края полей (padding edge).
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              Отступы (__margin area__) добавляют пустое пространство кокруг элемента и определяют расстояние до соседних элементов.
+            </script>
+          </section>
+          <section>
+            <img src="./imgs/lect2/box-model2.jpg">
+            <p>Border может и не быть</p>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              #### Box-sizing
+              Применяется для изменения алгоритма расчета ширины и высоты элемента.
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              #### Box-sizing
+              Универсальный стиль, большего и не требуется.
+              ```
+              *, *:before, *:after {
+              box-sizing: border-box;
+              }
+              ```
+            </script>
+          </section>
+        </section>
 				<section>
           <h3>Спасибо за внимание</h3>
           <h1>Q/A</h1>
