@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Course: WebDev 101</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="./lib/css/app.css">
+		<link rel="stylesheet" href="./lib/css/flexboxgrid.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>Брэндинг в сети</h1>
+          <h2>Общие правила и рекомендации для брендов в сети</h2>
+          <h2>aka Style Guide</h2>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Что такое брендинг?
+            __Брендинг__ – это процесс, в ходе которого у целевой аудитории формируется определенный образ объекта. Зачатую ставится одна цель - внедрить именно комплекс положительных свойств и характеристик продукции, что позволяет компаниям выходить вперед на фоне конкурентов. 
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## В чем его суть?
+            В большинстве случаев брендирование ставит целью увеличение объемов продаж. Достигается это за счет повышения интереса к продукции и, что самое важное, благоприятного образа торговой марки
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Зачем создавать Style Guide 
+            * Есть к чему сослаться, когда будете передавать проект
+            * Вы будете выглядеть профессиональнее
+            * Более ясный и однородный дизайн
+            * Вы контролируете дизайн, если кто-то накосячил, вы можете указать ему документ
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Вы должны кратко определить свой бренд
+
+            <img src="./imgs/branding/kew.jpg">
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Логотипы
+            <img src="./imgs/branding/cunard.jpg">
+
+            Вы должны иметь логотипы разных размеров для Web и для печати
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Укажите как делать нельзя
+            <img src="./imgs/branding/donts.jpg">
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Создайте или определите основные шрифты
+            <img src="./imgs/branding/yale.gif">
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## COPY-WRITING GUIDE 
+            <img src="./imgs/branding/can.jpg">
+          </script>
+        </section>
+
+				<section>
+          <h3>Спасибо за внимание</h3>
+          <h1>Q/A</h1>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+        width: 1100,
+				history: true,
+        slideNumber: 'c/t',
+        controls: false,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		<style>
+			img {
+				border: none !important;
+				box-shadow: none !important;
+			}
+		</style>
+	</body>
+</html>
