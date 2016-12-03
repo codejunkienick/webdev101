@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Course: WebDev 101</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="./lib/css/app.css">
+		<link rel="stylesheet" href="./lib/css/flexboxgrid.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>WebDev 101</h1>
+          <h2>Восстание неконтролируемого кода</h2>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## План на сегодня
+              * Что такое Git и для чего он вообще нужен
+              * Команды Git, которые понадобятся сегодня
+              * display: flex - урок выживания №2
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Что будем делать
+              * Разобьемся на группы (1-8 человек, как кому удобно)
+              * Каждый склонирует репозиторий, выполнит свою работу по FlexBox и пушнет свой коммит в репозиторий
+              * Team lead создаст index.html
+            </script>
+          </section>
+					<section data-markdown>
+						<script type="text/template">
+							## Для тех, кто не заходит в группу VK
+							* Нужно скачать Git (cli - console line interface, либо графический)
+							* Зарегистрироваться на GitHub.com (хватит обычного аккаунта, без студентческой подписки)
+						</script>
+					</section>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## GIT
+              1.	 Что это такое
+              2.	 Назначение
+              3.	 Как это выглядит
+              4.	 Как этим пользоваться
+              6.	 Где этим пользоваться
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Что это такое
+              * Распределенная система контроля версий
+              * Простыми словами, все ревизии вашего кода сохранены и синхронизированы с другими участниками и при необходимости, можно откатиться к любому месту
+            </script>
+          </section>
+					<section>
+						<img src="./imgs/lect3/rules.jpg"  style="width: 100%" />
+					</section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Назначение
+              * Вы хотите следить за своим кодом
+              * Вы хотите управлять своим кодом
+              * Вы работаете в команде (без git работа в команде - ад)
+            </script>
+          </section>
+					<section>
+						<img src="./imgs/lect3/meme.jpg"  style="width: 100%" />
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Как это выглядит
+							<img src="./imgs/lect3/git.png"  style="width: 45%" />
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## git init
+							* ```git init```
+							* Инициализирует локальный репозиторий
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## git add
+							* ```git add 'path'``` (обычно ```git add .```)
+							* Добавляет изменения в текущем файле или проекте к последующему коммиту (добавляем файлы к коммиту)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## git commit
+							* ```git commit -m 'initial commit'```
+							* Записывает изменения кода в локальной версии
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## git push
+							* ```git push origin master```
+							* Отправляет коммит в удаленный репозиторий
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## git pull
+							* ```git push origin master```
+							* Получает данные из удаленного репозитория
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Где этим пользоваться
+							* github.com
+							* bitbucket.com
+							* gitlab.com
+						</script>
+					</section>
+        </section>
+        <section>
+          <section data-markdown>
+						<script type="text/template">
+							<img src="./imgs/lect3/flex.png"  style="width: 80%" />
+						</script>
+        	</section>
+        </section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							* Team lead создает public репозиторий (https://github.com/new) с названием lesson3
+							* Team lead добавляет в репозиторий своих мемберов (Settings - Collaborators - Add collaborator)
+							* Team lead копирует файлы занятия
+							* Каждый клонирует репозиторий в любое удобное для него место
+							* Каждый копирует файл ```lesson3.html``` и переименовывает его в ```lesson3_вашНомерВКоманде.html```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							* Каждый выполняет задание в своем файле
+							* Каждый делает коммит (```git add . && git commit -m 'Я добавил свой файл' && git push origin master```)
+							* Каждый по очереди заливает свой коммит (после того, как кто-то залил, придется сделать ```git pull```)
+							* Team lead редактирует ```index.html``` (добавляет ссылки на работы друг друга) и заливает коммит
+						</script>
+					</section>
+				</section>
+				<section>
+          <h3>Спасибо за внимание</h3>
+          <h1>Q/A</h1>
+          <p style="padding-top:25px;">Онлайн: <a href="https://codejunkienick.github.io/slides/webdev101">codejunkienick.github.io/slides/webdev101</a></p>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+        width: 1100,
+				history: true,
+        slideNumber: 'c/t',
+        controls: false,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		<style>
+			img {
+				border: none !important;
+				box-shadow: none !important;
+			}
+		</style>
+	</body>
+</html>
